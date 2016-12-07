@@ -52,7 +52,7 @@ namespace Carniceria.BL.Clases
 
         public List<Producto> ListarProductos()
         {
-            throw new NotImplementedException();
+            return productos.ListarProductos();
         }
     }
 }
