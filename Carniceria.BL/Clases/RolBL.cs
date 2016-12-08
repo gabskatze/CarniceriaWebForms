@@ -19,12 +19,7 @@ namespace Carniceria.BL.Clases
             _d = new DS.Clases.RolDS();
         }
 
-        public Rol BuscarUsuario(string nombreUsuario, string contra)
-        {
-            DS.Interfaces.IRolDS usuario = new DS.Clases.RolDS();
-            return usuario.BuscarUsuario(nombreUsuario, contra);
-        }
-
+      
         public void InsertarRol(Rol IdRol)
         {
             _d.InsertarRol(IdRol);

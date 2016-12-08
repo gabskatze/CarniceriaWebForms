@@ -13,8 +13,7 @@ namespace Carniceria.DATOS
         [Key]
         [AutoIncrement]
         public int IdRol { get; set; }
-        public string TipoDeRol { get; set; }
-        public string Contrasena { get; set; }
-        public string NombreUsuario { get; set; }
+        public string Descripcion { get; set; }
+      
     }
 }

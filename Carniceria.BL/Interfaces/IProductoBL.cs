@@ -14,12 +14,14 @@ namespace Carniceria.BL.Interfaces
         Producto BuscarProducto(int idProducto);
 
         void InsertarProducto(Producto producto);
+        List<Producto> BuscarProductoPorCategoria(int idCategoria);
 
         void ActualizarProducto(Producto producto);
 
         void EliminarProducto(int idProducto);
 
 		List<DATOS.Producto> BuscarProductos(int? idCategoria);
-             
+       
+        void ActualizarDisponibles(int idProducto);
     }
 }

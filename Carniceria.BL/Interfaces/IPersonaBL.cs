@@ -9,5 +9,9 @@ namespace Carniceria.BL.Interfaces
     public interface IPersonaBL
     {
         void InsertarPersona(Persona persona);
+        List<Persona> ListarPersona();
+        DATOS.Persona BuscarUsuario(string correo, string contra);
+        List<Persona> ListarPersona1();
+        DATOS.Persona BuscarPersona(string correo);
     }
 }

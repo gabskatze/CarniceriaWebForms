@@ -18,5 +18,7 @@ namespace Carniceria.DS.Interfaces
         void ActualizarProducto(Producto producto);
 
         void EliminarProducto(int idProducto);
+        void ActualizarDisponibles(int idProducto);
+        List<Producto> BuscarProductoPorCategoria(int idCategoria);
     }
 }

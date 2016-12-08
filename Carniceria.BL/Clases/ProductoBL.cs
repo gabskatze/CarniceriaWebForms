@@ -19,6 +19,11 @@ namespace Carniceria.BL.Clases
             productos = new ProductoDS();
         }
 
+        public void ActualizarDisponibles(int idProducto)
+        {
+            productos.ActualizarDisponibles(idProducto);
+        }
+
         public void ActualizarProducto(Producto producto)
         {
             throw new NotImplementedException();
@@ -27,6 +32,11 @@ namespace Carniceria.BL.Clases
         public Producto BuscarProducto(int idProducto)
         {
             return productos.BuscarProducto(idProducto);
+        }
+
+        public List<Producto> BuscarProductoPorCategoria(int idCategoria)
+        {
+            return productos.BuscarProductoPorCategoria(idCategoria);
         }
 
         public List<Producto> BuscarProductos(int? idCategoria)
@@ -54,5 +64,6 @@ namespace Carniceria.BL.Clases
         {
             return productos.ListarProductos();
         }
+
     }
 }

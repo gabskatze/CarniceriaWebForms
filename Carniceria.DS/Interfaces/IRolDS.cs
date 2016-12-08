@@ -11,7 +11,7 @@ namespace Carniceria.DS.Interfaces
     {
         void InsertarRol(Rol IdRol);
         List<DATOS.Rol> ListarRoles();
-        DATOS.Rol BuscarUsuario(string nombreUsuario, string contra);
+    
 
     }
 }

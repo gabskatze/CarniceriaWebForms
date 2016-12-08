@@ -20,11 +20,7 @@ namespace Carniceria.DS.Clases
             _conexion = new OrmLiteConnectionFactory(DS.Default.conexion, SqlServerDialect.Provider);
             _db = _conexion.Open();
         }
-
-        public Rol BuscarUsuario(string nombreUsuario, string contra)
-        {
-            return _db.Select<DATOS.Rol>(x => x.NombreUsuario == nombreUsuario && x.Contrasena == contra).FirstOrDefault();
-        }
+        
 
         public void InsertarRol(Rol IdRol)
         {

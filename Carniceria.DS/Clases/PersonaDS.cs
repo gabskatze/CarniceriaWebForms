@@ -22,10 +22,30 @@ namespace Carniceria.DS.Clases
             _db = _conexion.Open();
         }
 
+        public Persona BuscarPersona(string correo)
+        {
+            return _db.Select<DATOS.Persona>(x => x.Email == correo ).FirstOrDefault();
+        }
+
+        public Persona BuscarUsuario(string correo, string contra)
+        {
+            return _db.Select<DATOS.Persona>(x => x.Email == correo && x.Contrasena == contra).FirstOrDefault();
+        }
+
         public void InsertarPersona(Persona persona)
         {
             _db.Insert(persona);
             
+        }
+
+        public List<Persona> ListarPersona()
+        {
+            return _db.Select<DATOS.Persona>();
+        }
+
+        public List<Persona> ListarPersona1()
+        {
+            return _db.Select<DATOS.Persona>();
         }
     }
 }

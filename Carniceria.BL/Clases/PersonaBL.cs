@@ -17,9 +17,32 @@ namespace Carniceria.BL.Clases
         {
             _s = new DS.Clases.PersonaDS();
         }
+
+        public Persona BuscarPersona(string correo)
+        {
+            return _s.BuscarPersona(correo);
+        }
+
+        public Persona BuscarUsuario(string correo, string contra)
+        {
+            return _s.BuscarUsuario(correo, contra);
+        }
+
         public void InsertarPersona(Persona persona)
         {
             _s.InsertarPersona(persona);
         }
+
+        public List<Persona> ListarPersona()
+        {
+            return _s.ListarPersona();
+        }
+
+        public List<Persona> ListarPersona1()
+        {
+            return _s.ListarPersona();
+        }
+
+        
     }
 }

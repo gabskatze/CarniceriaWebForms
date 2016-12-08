@@ -23,6 +23,11 @@ namespace Carniceria.DS.Clases
             _db = _conexion.Open();
         }
 
+        public void ActualizarDisponibles(int idProducto)
+        {
+            _db.ExecuteSql(string.Concat("EXEC ActualizarDisponibles ", idProducto.ToString()));
+        }
+
         public void ActualizarProducto(Producto producto)
         {
             _db.Update(producto);
@@ -31,6 +36,11 @@ namespace Carniceria.DS.Clases
         public Producto BuscarProducto(int idProducto)
         {
             return _db.Select<DATOS.Producto>(x => x.IdProducto == idProducto).FirstOrDefault();
+        }
+
+        public List<Producto> BuscarProductoPorCategoria(int idCategoria)
+        {
+            return _db.Select<DATOS.Producto>(x => x.IdCategoria == idCategoria);
         }
 
         public void EliminarProducto(int idProducto)
