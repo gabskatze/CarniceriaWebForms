@@ -2,8 +2,7 @@
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="form-group">
-        <asp:GridView ID="dgvProductos" runat="server" CssClass="table table-hover"></asp:GridView>
-       
+    <div class="form-group" style="">
+        <asp:GridView ID="dgvProductos" runat="server" CssClass="table table-hover"></asp:GridView>       
     </div>
 </asp:Content>
