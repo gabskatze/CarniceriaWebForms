@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Carniceria.DATOS;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Carniceria.DS.Interfaces
 {
     public interface IFacturaDS
     {
-
+        List<Factura> ListarFacturas();
     }
 }

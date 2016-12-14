@@ -252,6 +252,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="VerRuta.aspx" />
     <Content Include="VerRutas.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
@@ -453,6 +454,13 @@
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="Startup.cs" />
+    <Compile Include="VerRuta.aspx.cs">
+      <DependentUpon>VerRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerRuta.aspx.designer.cs">
+      <DependentUpon>VerRuta.aspx</DependentUpon>
+    </Compile>
     <Compile Include="VerRutas.aspx.cs">
       <DependentUpon>VerRutas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

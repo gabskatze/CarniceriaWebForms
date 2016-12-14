@@ -1,14 +1,14 @@
-﻿using Carniceria.BL.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System;
+using Carniceria.BL.Interfaces;
+using Carniceria.DATOS;
 
 namespace Carniceria.BL.Clases
 {
     public class RutaBL : IRutaBL
     {
-
+        public Ruta ListarRutas()
+        {
+            
+        }
     }
 }
