@@ -202,6 +202,7 @@
     <Content Include="Content\bootstrap-def.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\datepicker\datepicker.css" />
     <Content Include="Content\Site.css" />
     <Content Include="CrearRuta.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -223,6 +224,7 @@
     <Content Include="Scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\datepicker\bootstrap-datepicker.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -494,6 +496,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\images\" />
+    <Folder Include="Scripts\datepicker\locales\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Carniceria.BL\Carniceria.BL.csproj">

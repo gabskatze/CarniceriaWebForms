@@ -22,7 +22,7 @@ namespace Carniceria.DS.Clases
         }
         public List<Factura> ListarFacturas()
         {
-            return null;
+            return _db.Select<Factura>();
         }
     }
 }

@@ -21,5 +21,10 @@ namespace Carniceria.BL.Clases
         {
             _s.InsertarPersona(persona);
         }
+
+        public List<Persona> ListarPersonas(IEnumerable<int> idsPersona)
+        {
+            return _s.ListarPersonas().Where(x => idsPersona.Contains(x.IdPersona)).ToList();
+        }
     }
 }

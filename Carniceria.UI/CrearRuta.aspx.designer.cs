@@ -13,13 +13,13 @@ namespace Carniceria.UI {
     public partial class CrearRuta {
         
         /// <summary>
-        /// gvCompras control.
+        /// lbCompras control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvCompras;
+        protected global::System.Web.UI.WebControls.ListBox lbCompras;
         
         /// <summary>
         /// btnAgregar control.
@@ -40,15 +40,6 @@ namespace Carniceria.UI {
         protected global::System.Web.UI.WebControls.Button btnEliminar;
         
         /// <summary>
-        /// gvRuta control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvRuta;
-        
-        /// <summary>
         /// cldFechaEntrega control.
         /// </summary>
         /// <remarks>
@@ -58,6 +49,15 @@ namespace Carniceria.UI {
         protected global::System.Web.UI.WebControls.Calendar cldFechaEntrega;
         
         /// <summary>
+        /// tb1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb1;
+        
+        /// <summary>
         /// btnCrearRuta control.
         /// </summary>
         /// <remarks>
@@ -65,5 +65,14 @@ namespace Carniceria.UI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCrearRuta;
+        
+        /// <summary>
+        /// lbRuta control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox lbRuta;
     }
 }

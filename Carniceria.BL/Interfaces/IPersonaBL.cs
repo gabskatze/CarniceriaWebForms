@@ -9,5 +9,7 @@ namespace Carniceria.BL.Interfaces
     public interface IPersonaBL
     {
         void InsertarPersona(Persona persona);
+
+        List<Persona> ListarPersonas(IEnumerable<int> idsPersona);
     }
 }

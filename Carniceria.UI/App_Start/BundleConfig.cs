@@ -34,6 +34,9 @@ namespace Carniceria.UI
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                             "~/Scripts/modernizr-*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/DatapickerJs").Include(
+                            "~/Scripts/datepicker/bootstrap-datepicker.js"));
+
             ScriptManager.ScriptResourceMapping.AddDefinition(
                 "respond",
                 new ScriptResourceDefinition

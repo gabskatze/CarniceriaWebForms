@@ -27,5 +27,9 @@ namespace Carniceria.DS.Clases
             _db.Insert(persona);
             
         }
+        public List<Persona> ListarPersonas()
+        {
+            return _db.Select<Persona>();
+        }
     }
 }

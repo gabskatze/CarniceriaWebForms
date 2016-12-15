@@ -10,5 +10,6 @@ namespace Carniceria.DS.Interfaces
     {
         void InsertarPersona(Persona persona);
 
+        List<Persona> ListarPersonas();
     }
 }

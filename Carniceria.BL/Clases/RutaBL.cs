@@ -8,7 +8,7 @@ namespace Carniceria.BL.Clases
     {
         public Ruta ListarRutas()
         {
-            
+            return null;
         }
     }
 }
