@@ -37,6 +37,7 @@ namespace Carniceria.DS.Clases
             _db.Insert(persona);
             
         }
+<<<<<<< HEAD
 
         public List<Persona> ListarPersona()
         {
@@ -46,6 +47,11 @@ namespace Carniceria.DS.Clases
         public List<Persona> ListarPersona1()
         {
             return _db.Select<DATOS.Persona>();
+=======
+        public List<Persona> ListarPersonas()
+        {
+            return _db.Select<Persona>();
+>>>>>>> cc8e1dfc8e75d2fad82b5f0024c019057423c6fc
         }
     }
 }

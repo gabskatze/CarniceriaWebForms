@@ -33,6 +33,7 @@ namespace Carniceria.BL.Clases
             _s.InsertarPersona(persona);
         }
 
+<<<<<<< HEAD
         public List<Persona> ListarPersona()
         {
             return _s.ListarPersona();
@@ -44,5 +45,11 @@ namespace Carniceria.BL.Clases
         }
 
         
+=======
+        public List<Persona> ListarPersonas(IEnumerable<int> idsPersona)
+        {
+            return _s.ListarPersonas().Where(x => idsPersona.Contains(x.IdPersona)).ToList();
+        }
+>>>>>>> cc8e1dfc8e75d2fad82b5f0024c019057423c6fc
     }
 }

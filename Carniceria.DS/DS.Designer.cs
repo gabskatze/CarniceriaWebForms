@@ -26,8 +26,12 @@ namespace Carniceria.DS {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+<<<<<<< HEAD
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-KG8RE07\\SQLEXPRESS;Initial Catalog=Carniceria;Integrated Secu" +
             "rity=True")]
+=======
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(local);Initial Catalog=Carniceria;Integrated Security=True")]
+>>>>>>> cc8e1dfc8e75d2fad82b5f0024c019057423c6fc
         public string conexion {
             get {
                 return ((string)(this["conexion"]));
